@@ -16,12 +16,14 @@ So, what are the main parts of a reproducible project?
 
 ## the README file
 
+<img align="right" width="250" src="http://experimentalmath.info/blog/wp-content/uploads/2013/01/miracle-264x300.gif">
+
 As you can see, the README file should contain at least a description of your project.
 You should also explain the steps to take if you want to run the analysis for the first time on a new computer:
 where to start, do you need to contact someone for more information, etc.
 Generally explain the how and why of each step of the analysis.
 
-![Then a miracle occurs...](http://experimentalmath.info/blog/wp-content/uploads/2013/01/miracle-264x300.gif)
+<!-- ![Then a miracle occurs...](http://experimentalmath.info/blog/wp-content/uploads/2013/01/miracle-264x300.gif) -->
 
 ## The code folder
 
