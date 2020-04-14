@@ -14,21 +14,50 @@ Let me tell you why it is at least good for you as a scientist to strive for rep
 
 So, what are the main parts of a reproducible project?
 
-## the README file
+## The README file
 
 <img align="right" width="150" src="http://experimentalmath.info/blog/wp-content/uploads/2013/01/miracle-264x300.gif">
+<!-- ![Then a miracle occurs...](http://experimentalmath.info/blog/wp-content/uploads/2013/01/miracle-264x300.gif) -->
 
 As you can see, the README file should contain at least a description of your project.
-You should also explain the steps to take if you want to run the analysis for the first time on a new computer:
-where to start, do you need to contact someone for more information, etc.
-Generally explain the how and why of each step of the analysis.
+You should also explain the steps to take in order to run the analysis for the first time on a new computer:
 
-<!-- ![Then a miracle occurs...](http://experimentalmath.info/blog/wp-content/uploads/2013/01/miracle-264x300.gif) -->
+ * where to start, do you need to contact someone for more information, etc.
+
+Generally explain the how and why of each step of the analysis. If you are are reading this on Github, ypu can see that its prefered format for a README file is `.md`, for `markdown`. This means that tyhe file has been written using the markdown syntax to format the document in the nice-ish way it is presented on the web. There are quite a few markup languages, and all of them allows us to give properties to common text, such as formatting, highlights, or hyperlinks. Go to the pencil logo on the upper right corner of the document to look at the raw file and explore its raw markdown syntax. It is not hard to interpret, so you can probably figure out how to write your own markdown README file in no time.  Go here for more details and advanced sytax of a markdown document.
+
+## The data-raw folder
+
+Here goes your original data, before cleaning up.
+
+Take into account a size limit of 50Mb. Any file larger than that that will have a hard time going through git.
+If it is available to you, try hosting your data on an online data repository
+
 
 ## The code folder
 
-This contains all code needed for data retrieveing and cleaning, analysis, figures, and report generation.
-Ideally, functions that automatize repetitive tasks, for example:
+This contains all code needed for data retrieveing and cleaning, analysis, and figures generation.
+Try to automatize tasks by transforming into a function any code entailing a repetitive task, for example:
 
 - code to load the raw data, either from an online database, other repository, or from the `data-raw folder`
-- code to clean the raw data and save the clean data in the `data folder`
+- code to clean the raw data and save the clean data in the `data folder`.
+
+Make sure to explaon what your code does (document your code) and also provide an example on how to use your functions if any.
+
+## The data folder
+
+Contains your cleaned up data. Data files should be names with something that makes sense, and preferably also display the date data was generated.
+
+## A fig or figures folder
+
+This contains your images
+
+## A docs folder
+
+This contains your reports.
+You can of course write your reports in any format you'd like.
+I suggest using a markup language for this, since it aligns with a reproducible workflow.
+Among available markup languages, `rmarkdown` is one of the most versatile and fit options for writing scientific reports.   It allows embedding all types of code and run it within the report, to generate a figure, for example.
+It allows adding citations and a list of references in any format.
+
+Go here for a quick introduction to the rmarkdown format.
