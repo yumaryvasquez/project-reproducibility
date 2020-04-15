@@ -1,0 +1,61 @@
+---
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+params:
+  title: "A report on rmarkdown possibilities"
+  date: April 15, 2020
+  place: "Merced, California"
+bibliography: my_references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# `r params$title`
+
+A report generated on `r params$date` at `r params$place`
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Characteristics of Open Science, following @Fecher2014
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## What is your science victory from last week
+My challenge past week was to finish some slides I've been writing on a new markdown template, and to add all my slides into my website.
+
+My academic website is written in a markup language that is somehow new to me (css), so it sometimes doesn't do what I want. It was basically not displaying the slides and it was adding some share buttons that just added to much clutter to the slides main page.
+
+I looked up a bunch of online tutorials but at the end I figure it out by searching the name of the social media platform tha the button was coding for on the css files and I eventually fpund the file where these buttons are controlled. I adde dthis to my tutorial on making academic websites, and I actually maed an advanced topic for these.
+
+## What am I working on and why is it important?
+datelife paper is important for my academic career, 
+
+Why open science is important blog post
+I want to establish my self as an advocate for open science and reproducibility. I have been gathering references, to pinpoint some problems with it: why has it been hard to do open science? what are the hurdles? How can we encourage changing current data sharing practices?
+
+I am just really interested in making data available and promoting reproducibility. I believe it helps advance science faster and addressing the issues is key to change, and hopefully better, our data sharing habits.
+
+## problems with open science: why has it been hard to do open science? what are the hurdles? How can we encourage changing current data sharing practices?
+
+Institutions have a reward system by publication on journals with high impact factor and by number of publications. The former encourages journals toonly publish high impact research, that supports current beliefs. This promotes researchers to ignore negative results and only publish positive results or to look for data sets that support statistically signifcant relationships. The latter encourages researchers to hold on to their data so the researchers do not take advantage of their data before them, and they can have more publications. 
+
+Add a .pink[csl] option with <br/> your format of preference.
+
